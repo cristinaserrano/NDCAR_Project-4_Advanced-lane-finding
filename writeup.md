@@ -63,16 +63,19 @@ See section 2.2 of of `detailed_process.ipynb`. Example of binary image result p
 Resulting combined binary is obtained keeping ones from absolute value thresholded image and s_channel thresholded image and removing pixels that not pass the direction/angle threshold.
 
 Example:
+
 <img src='02_threshold/binary_example.png'>
 
 ---
 >C. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
 See section 2.3 of of `detailed_process.ipynb`. Main steps:
-- Compute transformation matrices (direct and inverse) and source/destination points (section 2.3.1). Method: After choosing 4 poing in image that delimitate a plane, use custom function `perspective_transform` to compute transformation matrices (direct and inverse). Also return source and destination points.
+
+- Compute transformation matrices (direct and inverse) and source/destination points (section 2.3.1). Method: After choosing 4 points in image that delimitate a plane, use custom function `perspective_transform` to compute transformation matrices (direct and inverse). Also return source and destination points.
 - Apply transformation to new image: using custom function `apply_transform` (see section 2.3.2)
 
 I verified that my perspective transform was working as expected by drawing the src and dst points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
+
 <img src='03_perspective_transform/plane.png'>
 <img src='03_perspective_transform/example.png'>
 
@@ -100,17 +103,20 @@ Detected pixels image:
 
 __POLYNOMIAL ADJUSTMENT AND CURVATURE__
 
-- Fit my lane lines with a 2nd order polynomial (section 2.4.2). Polynomial coefficients are computed using `np.polyfit()` and radious computed using formula:
+- Fit my lane lines with a 2nd order polynomial (section 2.4.2). Polynomial coefficients are computed using `np.polyfit()` and radius computed using formula:
+
 <img src='04_detection/polynomial.png'>
+
 <img src='04_detection/formula.png'>
 
 Example:
+
 <img src='04_detection/final_polynomial.png'>
 
 ---
 > E. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-Radious of curvature computed for left and right lanes in previous section (see 2.4.2 of `detailed_process.ipynb`). Final curve is mean value for both lanes ratious.
+Radious of curvature computed for left and right lanes in previous section (see 2.4.2 of `detailed_process.ipynb`). Final curve is mean value for both lanes radius.
 
 Offset: see section 2.4.3. Offset computed using `compute_vehicle_offset` (lines 167 to 173 of `func_detect.py`). Basically consist on taking x values of lane at base of image and compute desviation from center of image (assumed is center of car)
 
@@ -136,6 +142,7 @@ Video is obtained applying the `process_image` custom function (defined in lines
 Video created in section 4 of `detailed_process.ipynb`
 
 # Discussion
+
 > Briefly discuss any problems / issues you faced in your implementation of this project. Where will your pipeline likely fail? What could you do to make it more robust?
 
 Basically my strategy has been to join all parts presented in lessons and use lots of plots to 'see' what was going on and adjust.
