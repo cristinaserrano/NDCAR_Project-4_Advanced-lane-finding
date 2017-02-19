@@ -52,18 +52,6 @@ See __section 1__ of the IPython notebook located in "./detailed_process.ipynb".
 
 See __section 2.1__ of `detailed_process.ipynb`. The image is undistorted using `cv2.undistort()`in combination with mtx and dist previously computed in calibration step.
 
-
-```python
-# Read lane image
-original_img = cv2.imread('data/test_images/straight_lines1.jpg')
-img = cv2.undistort(original_img, mtx, dist, None, mtx)
-img_rgb = pj.bgr_to_rgb(img)
-
-plt.imshow(img_rgb)
-plt.title('undistorted image');
-```
-
-
 <img src='01_camera_cal/undistorted.png'>
 
 
