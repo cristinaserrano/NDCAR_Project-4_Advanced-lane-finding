@@ -64,7 +64,7 @@ plt.title('undistorted image');
 ```
 
 
-![png](output_6_0.png)
+<img src='01_camera_cal/undistorted.png'>
 
 
 ---
