@@ -1,6 +1,6 @@
 
 # Table of Contents
- <p><div class="lev1 toc-item"><a href="#Advanced-Lane-Finding-Project" data-toc-modified-id="Advanced-Lane-Finding-Project-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Advanced Lane Finding Project</a></div><div class="lev2 toc-item"><a href="#Goals" data-toc-modified-id="Goals-11"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Goals</a></div><div class="lev1 toc-item"><a href="#Rubric" data-toc-modified-id="Rubric-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Rubric</a></div><div class="lev2 toc-item"><a href="#Writeup-/-readme" data-toc-modified-id="Writeup-/-readme-21"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Writeup / readme</a></div><div class="lev2 toc-item"><a href="#Camera-calibration" data-toc-modified-id="Camera-calibration-22"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Camera calibration</a></div><div class="lev2 toc-item"><a href="#Pipeline-(single-images)" data-toc-modified-id="Pipeline-(single-images)-23"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>Pipeline (single images)</a></div><div class="lev1 toc-item"><a href="#Pipeline-(video)" data-toc-modified-id="Pipeline-(video)-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Pipeline (video)</a></div><div class="lev1 toc-item"><a href="#Discussion" data-toc-modified-id="Discussion-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Discussion</a></div>
+ <p><div class="lev1 toc-item"><a href="#Advanced-Lane-Finding-Project" data-toc-modified-id="Advanced-Lane-Finding-Project-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Advanced Lane Finding Project</a></div><div class="lev1 toc-item"><a href="#Rubric" data-toc-modified-id="Rubric-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Rubric</a></div><div class="lev1 toc-item"><a href="#Writeup-/-readme" data-toc-modified-id="Writeup-/-readme-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Writeup / readme</a></div><div class="lev1 toc-item"><a href="#Camera-calibration" data-toc-modified-id="Camera-calibration-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Camera calibration</a></div><div class="lev1 toc-item"><a href="#Pipeline-(single-images)" data-toc-modified-id="Pipeline-(single-images)-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Pipeline (single images)</a></div><div class="lev1 toc-item"><a href="#Pipeline-(video)" data-toc-modified-id="Pipeline-(video)-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Pipeline (video)</a></div><div class="lev1 toc-item"><a href="#Discussion" data-toc-modified-id="Discussion-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Discussion</a></div>
 
 # Advanced Lane Finding Project
 
@@ -8,7 +8,7 @@
 [Template](https://github.com/udacity/CarND-Advanced-Lane-Lines/blob/master/writeup_template.md)
 
 ---
-## Goals
+Goals:
 
 * Compute the camera calibration matrix and distortion coefficients given a set of chessboard images.
 *  Apply a distortion correction to raw images.
@@ -25,13 +25,13 @@
 Here I will consider the rubric points individually and describe how I addressed each point in my implementation.
 
 ---
-## Writeup / readme
+# Writeup / readme
 >A)  Provide a Writeup / README that includes all the rubric points and how you addressed each one.
 
 You're reading it!
 
 ---
-## Camera calibration
+# Camera calibration
 
 >A) Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
@@ -46,7 +46,7 @@ See __section 1__ of the IPython notebook located in "./detailed_process.ipynb".
 
 
 ---
-## Pipeline (single images)
+# Pipeline (single images)
 
 >A. Provide an example of a distortion-corrected image.
 
