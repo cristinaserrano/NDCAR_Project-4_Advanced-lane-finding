@@ -141,6 +141,7 @@ See section 2.5 of `detailed_process.ipynb`.
 >A. Provide a link to your final video output. Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!)
 
 My video is stored in `output_video` folder as `project_video_processed.mp4`.
+https://github.com/cristinaserrano/NDCAR_Project-4_Advanced-lane-finding/blob/master/output_video/project_video_processed.mp4
 
 Video is obtained applying the `process_image` custom function (defined in lines 18 to 91 of `final_pipeline.py`). Is just a wrapper for the previous steps.
 
