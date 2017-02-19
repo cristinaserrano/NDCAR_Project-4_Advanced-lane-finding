@@ -159,8 +159,9 @@ S channel proved to be very good for detecting lane, but to give it more robustn
 
 Regarding lane detection, by adjusting width and height of sliding windows my pipe detected lines well enough. Nevertheless, for future improvement of this pipe, I would explore use a convolutional approach and also use info from previous frame (as suggested by lesson regarding usage of left/right lane class).
 
+Further strategies to explore: to check polynomial coefficients, comparing right to left lane as well as previous lanes. Coefficients between right and left should be almost identical and not vary much from previous frames.
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further. 
+One circumstance in which this pipeline is expected to fail is when a car changes lines in front of my car and the lanes are not clear/continuous... the fact that the car would partially hiding a lane line might make the polyfit behave badly.
 
 
 ```python
